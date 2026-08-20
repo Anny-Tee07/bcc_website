@@ -7,6 +7,7 @@
     <title>The Covenant of Light Church</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         :root {
             --bg: #F4F3F6;
@@ -35,7 +36,6 @@
             font-style: normal;
         }
 
-        /* Responsive typography */
         h1 {
             line-height: 1.2;
         }
@@ -48,7 +48,6 @@
             line-height: 1.6;
         }
 
-        /* Container padding */
         @media (max-width: 576px) {
             .container {
                 padding-left: 1rem;
@@ -56,7 +55,6 @@
             }
         }
 
-        /* Responsive spacing */
         .py-lg-6 {
             padding-top: 4rem;
             padding-bottom: 4rem;
@@ -69,13 +67,11 @@
             }
         }
 
-        /* Image responsiveness */
         img.img-fluid {
             max-width: 100%;
             height: auto;
         }
 
-        /* Touch-friendly buttons */
         @media (max-width: 576px) {
             .btn {
                 min-height: 44px;
@@ -87,63 +83,52 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm position-sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg ">
         <div class="container">
 
-            <!-- Logo / Brand -->
-            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-                <img src="bcc-assets/ChatGPT Image Aug 5, 2026, 03_43_39 PM.png" alt="Covenant of Light" height="50">
+            <a class="navbar-brand h1" href="#">
+                <img src="bcc-assets/ChatGPT Image Aug 5, 2026, 03_43_39 PM.png"
+                    class="align-text-bottom rounded-circle" width="30" height="30" style="
+                        transform: translateY(3px);
+                        margin-right: 2px;
+                    ">
 
-                <span class="fw-bold d-none d-md-block">
-                    Covenant of Light Church
-                </span>
-
-                <span class="fw-bold d-md-none" style="font-size: 0.95rem;">
-                    C Light
-                </span>
             </a>
 
-            <!-- Mobile Menu Button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggle">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- Navigation -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-2 gap-lg-4">
-
+            <div class="collapse navbar-collapse" id="toggle">
+                <ul class="navbar-nav me-auto pb-1">
                     <li class="nav-item">
-                        <a class="nav-link px-2 px-lg-3 fw-bold" href="#">
-                            About
-                        </a>
+                        <a class="nav-link active mx-2" href="#">Home</a>
                     </li>
-
                     <li class="nav-item">
-                        <a class="nav-link px-2 px-lg-3 fw-bold" href="#">
-                            Ministries
-                        </a>
+                        <a class="nav-link active mx-2" href="#">About</a>
                     </li>
-
                     <li class="nav-item">
-                        <a class="nav-link px-2 px-lg-3 fw-bold" href="#">
-                            Sermons
-                        </a>
+                        <a class="nav-link active mx-2" href="#">Our Ministries</a>
                     </li>
-
                     <li class="nav-item">
-                        <a class="nav-link px-2 px-lg-3 fw-bold" href="#">
-                            Events
-                        </a>
+                        <a class="nav-link active mx-2" href="#">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active mx-2" href="#">Sermons</a>
                     </li>
 
                 </ul>
 
-                <!-- Visit Button -->
-                <a href="#" class="btn btn-primary rounded-pill px-3 px-lg-4 ms-lg-3 mt-2 mt-lg-0">
-                    Plan Your Visit
-                </a>
+                <br>
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="How can we help you?">
+                    <button class="btn btn-outline-light" type="submit">
+                        Search
+                    </button>
+                </form>
+
+                <br>
 
             </div>
 
@@ -481,6 +466,249 @@
             </div>
         </div>
     </section>
+    <!-- CONVENER SECTION -->
+    <section class="py-5 bg-light">
+
+        <div class="container py-4">
+
+            <!-- Section Heading -->
+            <div class="text-center mb-5">
+
+                <p class="text-primary fw-bold text-uppercase mb-2">
+                    Our Leadership
+                </p>
+
+                <h2 class="fw-bold display-6">
+                    Meet Our Convener
+                </h2>
+
+                <p class="text-secondary mx-auto" style="max-width: 650px;">
+                    Get to know the person helping lead our church community
+                    with faith, vision and purpose.
+                </p>
+
+            </div>
+
+
+            <!-- Convener Content -->
+            <div class="row align-items-center g-5">
+
+                <!-- Picture -->
+                <div class="col-lg-5">
+
+                    <div class="position-relative">
+
+                        <img src="bcc-assets/convener.jpg" alt="Our Convener" class="img-fluid rounded-4 shadow w-100"
+                            style="max-height: 550px; object-fit: cover;">
+
+                    </div>
+
+                </div>
+
+
+                <!-- Text -->
+                <div class="col-lg-7">
+
+                    <p class="text-primary fw-semibold mb-2">
+                        THE CONVENER
+                    </p>
+
+                    <h3 class="fw-bold display-6 mb-3">
+                        Pastor [Full Name]
+                    </h3>
+
+                    <p class="text-secondary lh-lg">
+                        Welcome to Covenant of Light Church. Our convener,
+                        Pastor [Full Name], is passionate about building a
+                        Christ-centered community where people can grow in
+                        faith, discover purpose and serve others.
+                    </p>
+
+                    <p class="text-secondary lh-lg">
+                        Through dedicated leadership and a heart for people,
+                        [he/she/they] continues to help shape the vision of
+                        Covenant of Light and create a place where everyone
+                        can encounter God and find a sense of belonging.
+                    </p>
+
+                    <!-- Small Highlight -->
+                    <div class="border-start border-primary border-4 ps-3 my-4">
+                        <p class="fst-italic mb-0">
+                            "A short personal quote from the convener can go
+                            right here."
+                        </p>
+                    </div>
+
+                    <a href="#" class="btn btn-primary rounded-pill px-4 py-2">
+                        Read Full Story
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- MINISTRIES SECTION -->
+    <section class="py-5">
+
+        <div class="container py-4">
+
+            <!-- Heading -->
+            <div class="text-center mb-5">
+
+                <p class="text-primary fw-bold text-uppercase mb-2">
+                    Get Involved
+                </p>
+
+                <h2 class="fw-bold display-6">
+                    Our Ministries
+                </h2>
+
+                <p class="text-secondary mx-auto" style="max-width: 650px;">
+                    There is a place for everyone to serve, connect and grow.
+                    Discover the different units that make up our church community.
+                </p>
+
+            </div>
+
+
+            <!-- Ministry Cards -->
+            <div class="row g-4">
+
+                <!-- Prayer -->
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-4">
+
+                        <div class="mx-auto mb-4 d-flex align-items-center justify-content-center
+                                bg-primary bg-opacity-10 rounded-circle" style="width: 70px; height: 70px;">
+
+                            <span class="fs-2">
+                                🙏
+                            </span>
+
+                        </div>
+
+                        <h4 class="fw-bold">
+                            Prayer Unit
+                        </h4>
+
+                        <p class="text-secondary">
+                            A dedicated team committed to prayer, intercession
+                            and seeking God's direction for our church and community.
+                        </p>
+
+                        <a href="#" class="text-primary fw-semibold text-decoration-none mt-auto">
+                            Learn More →
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Sanctuary -->
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-4">
+
+                        <div class="mx-auto mb-4 d-flex align-items-center justify-content-center
+                                bg-primary bg-opacity-10 rounded-circle" style="width: 70px; height: 70px;">
+
+                            <span class="fs-2">
+                                ⛪
+                            </span>
+
+                        </div>
+
+                        <h4 class="fw-bold">
+                            Sanctuary Unit
+                        </h4>
+
+                        <p class="text-secondary">
+                            Helping create a welcoming, peaceful and organized
+                            environment where everyone can worship comfortably.
+                        </p>
+
+                        <a href="#" class="text-primary fw-semibold text-decoration-none mt-auto">
+                            Learn More →
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Media -->
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-4">
+
+                        <div class="mx-auto mb-4 d-flex align-items-center justify-content-center
+                                bg-primary bg-opacity-10 rounded-circle" style="width: 70px; height: 70px;">
+
+                            <span class="fs-2">
+                                🎥
+                            </span>
+
+                        </div>
+
+                        <h4 class="fw-bold">
+                            Media Unit
+                        </h4>
+
+                        <p class="text-secondary">
+                            Using creativity and technology to share our worship,
+                            messages and church activities with a wider audience.
+                        </p>
+
+                        <a href="#" class="text-primary fw-semibold text-decoration-none mt-auto">
+                            Learn More →
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Music / Choir -->
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-4">
+
+                        <div class="mx-auto mb-4 d-flex align-items-center justify-content-center
+                                bg-primary bg-opacity-10 rounded-circle" style="width: 70px; height: 70px;">
+
+                            <span class="fs-2">
+                                🎵
+                            </span>
+
+                        </div>
+
+                        <h4 class="fw-bold">
+                            Music & Choir
+                        </h4>
+
+                        <p class="text-secondary">
+                            Leading the congregation in worship through music,
+                            song and a heart devoted to glorifying God.
+                        </p>
+
+                        <a href="#" class="text-primary fw-semibold text-decoration-none mt-auto">
+                            Learn More →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
     <div class="container text-center py-5">
         <h2 class="display-5 fw-bold mb-3">Watch Our Sermons</h2>
         <p class="lead text-muted mx-auto" style="max-width: 700px;">Lorem ipsum dolor, sit amet consectetur adipisicing
@@ -536,6 +764,80 @@
                 </div>
             </div>
         </div>
+    </section>
+    <!-- GALLERY SECTION -->
+    <section class="py-5 bg-light">
+
+        <div class="container py-4">
+
+            <!-- Heading -->
+            <div class="text-center mb-5">
+
+                <p class="text-primary fw-bold text-uppercase mb-2">
+                    Moments With Us
+                </p>
+
+                <h2 class="fw-bold display-6">
+                    Life at Covenant of Light
+                </h2>
+
+                <p class="text-secondary mx-auto" style="max-width: 650px;">
+                    Take a glimpse into our worship, fellowship, celebrations
+                    and the moments we share together as a church family.
+                </p>
+
+            </div>
+
+
+            <!-- Gallery -->
+            <div class="row g-3">
+
+                <!-- Large Image -->
+                <div class="col-lg-6">
+
+                    <img src="bcc-assets/gallery1.jpg" alt="Worship at Covenant of Light Church"
+                        class="img-fluid w-100 rounded-4 shadow-sm" style="height: 420px; object-fit: cover;">
+
+                </div>
+
+
+                <!-- Two Images -->
+                <div class="col-lg-3 col-md-6">
+
+                    <img src="bcc-assets/gallery2.jpg" alt="Church gathering"
+                        class="img-fluid w-100 rounded-4 shadow-sm mb-3" style="height: 200px; object-fit: cover;">
+
+                    <img src="bcc-assets/gallery3.jpg" alt="Church worship" class="img-fluid w-100 rounded-4 shadow-sm"
+                        style="height: 200px; object-fit: cover;">
+
+                </div>
+
+
+                <!-- Two Images -->
+                <div class="col-lg-3 col-md-6">
+
+                    <img src="bcc-assets/gallery4.jpg" alt="Church fellowship"
+                        class="img-fluid w-100 rounded-4 shadow-sm mb-3" style="height: 200px; object-fit: cover;">
+
+                    <img src="bcc-assets/gallery5.jpg" alt="Church event" class="img-fluid w-100 rounded-4 shadow-sm"
+                        style="height: 200px; object-fit: cover;">
+
+                </div>
+
+            </div>
+
+
+            <!-- Button -->
+            <div class="text-center mt-5">
+
+                <a href="#" class="btn btn-primary rounded-pill px-4 py-2">
+                    View More Moments
+                </a>
+
+            </div>
+
+        </div>
+
     </section>
 
 
@@ -627,9 +929,11 @@
             </footer>
         </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
-        </script>
+        </script> -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
