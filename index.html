@@ -79,6 +79,98 @@
                 width: 100%;
             }
         }
+
+        .carousel-item img {
+            height: 90vh;
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            .carousel-item img {
+                height: 75vh;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .carousel-item img {
+                height: 60vh;
+            }
+        }
+
+        .carousel-caption {
+            bottom: 18%;
+            left: 8%;
+            right: auto;
+            width: 50%;
+            text-align: left;
+        }
+
+        @media (max-width: 992px) {
+            .carousel-caption {
+                width: 65%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .carousel-caption {
+                width: 100%;
+                left: 5%;
+                right: 5%;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .carousel-caption {
+                bottom: 15%;
+                left: 1rem;
+                right: 1rem;
+                width: auto;
+            }
+        }
+
+        .carousel-caption h1 {
+            color: white;
+        }
+
+        @media (max-width: 992px) {
+            .carousel-caption h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .carousel-caption h1 {
+                font-size: 1.75rem;
+                line-height: 1.2;
+            }
+        }
+
+        .carousel-caption p {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        @media (max-width: 576px) {
+            .carousel-caption p {
+                font-size: 0.95rem;
+            }
+        }
+
+        .btn-primary {
+            background-color: #5B2C83;
+            border-color: #5B2C83;
+        }
+
+        .btn-primary:hover {
+            background-color: #472166;
+            border-color: #472166;
+        }
+
+        @media (max-width: 576px) {
+            .carousel-caption .btn {
+                width: 100%;
+                margin-bottom: 0.75rem;
+            }
+        }
     </style>
 </head>
 
@@ -102,19 +194,19 @@
             <div class="collapse navbar-collapse" id="toggle">
                 <ul class="navbar-nav me-auto pb-1">
                     <li class="nav-item">
-                        <a class="nav-link active mx-2" href="#">Home</a>
+                        <a class="nav-link active mx-2" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active mx-2" href="#">About</a>
+                        <a class="nav-link active mx-2" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active mx-2" href="#">Our Ministries</a>
+                        <a class="nav-link active mx-2" href="#ministry">Our Ministries</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active mx-2" href="#">Events</a>
+                        <a class="nav-link active mx-2" href="#events">Events</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active mx-2" href="#">Sermons</a>
+                        <a class="nav-link active mx-2" href="#sermons">Sermons</a>
                     </li>
 
                 </ul>
@@ -256,102 +348,7 @@
         </button>
 
     </div>
-
-    <style>
-        /* Carousel responsiveness */
-        .carousel-item img {
-            height: 90vh;
-            object-fit: cover;
-        }
-
-        @media (max-width: 768px) {
-            .carousel-item img {
-                height: 75vh;
-            }
-        }
-
-        @media (max-width: 576px) {
-            .carousel-item img {
-                height: 60vh;
-            }
-        }
-
-        .carousel-caption {
-            bottom: 18%;
-            left: 8%;
-            right: auto;
-            width: 50%;
-            text-align: left;
-        }
-
-        @media (max-width: 992px) {
-            .carousel-caption {
-                width: 65%;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .carousel-caption {
-                width: 100%;
-                left: 5%;
-                right: 5%;
-            }
-        }
-
-        @media (max-width: 576px) {
-            .carousel-caption {
-                bottom: 15%;
-                left: 1rem;
-                right: 1rem;
-                width: auto;
-            }
-        }
-
-        .carousel-caption h1 {
-            color: white;
-        }
-
-        @media (max-width: 992px) {
-            .carousel-caption h1 {
-                font-size: 2.5rem;
-            }
-        }
-
-        @media (max-width: 576px) {
-            .carousel-caption h1 {
-                font-size: 1.75rem;
-                line-height: 1.2;
-            }
-        }
-
-        .carousel-caption p {
-            color: rgba(255, 255, 255, 0.9);
-        }
-
-        @media (max-width: 576px) {
-            .carousel-caption p {
-                font-size: 0.95rem;
-            }
-        }
-
-        .btn-primary {
-            background-color: #5B2C83;
-            border-color: #5B2C83;
-        }
-
-        .btn-primary:hover {
-            background-color: #472166;
-            border-color: #472166;
-        }
-
-        @media (max-width: 576px) {
-            .carousel-caption .btn {
-                width: 100%;
-                margin-bottom: 0.75rem;
-            }
-        }
-    </style>
-    <section class="py-5 py-lg-6 bg-white">
+    <section class="py-5 py-lg-6 bg-white" id="about">
         <div class="container">
             <div class="row align-items-center gx-4 gx-lg-5 gy-5">
                 <div class="col-12 col-lg-6 order-2 order-lg-1">
@@ -359,10 +356,10 @@
                         alt="Covenant of Light Church" class="img-fluid rounded-4 shadow-sm w-100">
                 </div>
                 <div class="col-12 col-lg-6 order-1 order-lg-2">
-                    
-                <p class="text-primary fw-bold text-uppercase mb-2">
-                    Get to know us
-                </p>
+
+                    <p class="text-primary fw-bold text-uppercase mb-2">
+                        Get to know us
+                    </p>
                     <h2 class="display-5 fw-bold mb-4">About Us</h2>
                     <p class="lead text-muted mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
                         auctor,
@@ -375,12 +372,12 @@
             </div>
         </div>
     </section>
-    <section class="py-5 py-lg-6">
+    <section class="py-5 py-lg-6" id="events">
         <div class="container">
             <div class="text-center mb-5">
-                
+
                 <p class="text-primary fw-bold text-uppercase mb-2">
-                   What we are doing next
+                    What we are doing next
                 </p>
                 <h1 class="display-5 fw-bold mb-3">Our Upcoming Events</h1>
                 <p class="lead text-muted mx-auto" style="max-width: 600px;">Lorem ipsum dolor sit amet consectetur
@@ -428,7 +425,7 @@
             </div>
         </div>
     </section>
-    <section class="py-5 mb-5 bg-light">
+    <section class="py-5 mb-5 bg-light" >
         <div class="container">
             <div class="row g-0 rounded-4 overflow-hidden shadow-sm">
 
@@ -537,7 +534,7 @@
         </div>
 
     </section>
-    <section class="py-5">
+    <section class="py-5" id="ministry">
         <div class="container py-4">
             <div class="text-center mb-5">
 
@@ -681,7 +678,7 @@
         </div>
 
     </section>
-    <div class="container text-center py-5">
+    <div class="container text-center py-5" id="sermons">
 
         <p class="text-primary fw-bold text-uppercase mb-2">
             Listen with us
@@ -742,7 +739,7 @@
         </div>
     </section>
 
-    <section class="py-5 bg-light">
+    <section class="py-5 bg-light" id="gallery">
         <div class="container py-4">
             <div class="text-center mb-5">
                 <p class="text-primary fw-bold text-uppercase mb-2">
@@ -868,10 +865,10 @@
                         <div class="col-12 col-md-6 col-lg-3">
                             <h6 class="fw-bold text-primary mb-3">Quick Links</h6>
                             <ul class="list-unstyled">
-                                <li class="mb-2"><a href="#" class="text-muted text-decoration-none">About Us</a></li>
-                                <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Ministries</a></li>
-                                <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Sermons</a></li>
-                                <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Events</a></li>
+                                <li class="mb-2"><a href="#about" class="text-muted text-decoration-none">About Us</a></li>
+                                <li class="mb-2"><a href="#ministry" class="text-muted text-decoration-none">Ministries</a></li>
+                                <li class="mb-2"><a href="#sermons" class="text-muted text-decoration-none">Sermons</a></li>
+                                <li class="mb-2"><a href="#events" class="text-muted text-decoration-none">Events</a></li>
                             </ul>
                         </div>
                     </div>
